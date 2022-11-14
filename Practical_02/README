@@ -1,6 +1,6 @@
 // Question 1
 
-/* For this exercise you need to have Conversion.c or Conversion. f 90. 
+For this exercise you need to have Conversion.c or Conversion. f 90. 
 
 1. Compile and the program.
 	The program is compiled successfully.
@@ -21,18 +21,27 @@ that will do this.
 
 5. For C use the function log f , which is part of the maths library.
 	numdigits = ceil(logf(fnum)/log(2))
-*/
+
+
+Output : The number of digits is 25
+	 inum=33554431,  
+	 fnum=33554432.000000, 
+	 inum in binary=1111111111111111111111111
 
 
 
 //Question 2
 
-/*For this exercise use Sum.c or Sum. f 90.
+For this exercise use Sum.c or Sum. f 90.
 1. Complete the code to make the sum:
 	The program is compiled successfully.
 2. Print out the difference between the two sums.
-	The difference is 0.0000007
+	The difference is 0.000007
 3. Is there a difference between sum1 and sum2 and are the two sums mathematically the same
 or not?
-	There is a difference between sum1 and sum2 due to rounding in the floating point arothematics. But the two sums are mathematically the same.
-*/
+	There is a difference between sum1 and sum2 due to rounding in the floating point arithematics. But the two sums are mathematically the same.
+
+
+Output: Sum1=7.485478
+ 	Sum2=7.485472
+ 	Difference between the two is 0.000007
