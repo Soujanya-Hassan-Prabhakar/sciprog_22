@@ -1,0 +1,28 @@
+//Practical 0
+
+• Computing the area under the curve of f (x) where x ∈ [a, b] can be done using the Trapezoidal rule:
+ ∫f(x)dx ∼ b−a/2N (f(x_0) + 2f(x_1) + 2f(x_2) + ··· + 2f(x_N−1) + f(x_N))
+where x_0 = a and x_N = b with N−1 equidistant points between a and b.
+• The integral is changed into a sum, using the values of the function at certain points. 
+  Increasing the number of points increases the accuracy.
+• Find the integral of f(x) = tan(x) from 0 → π/3. 
+  Compare with the actual result: ∫(π/3,0) tan(x)dx = log(2).
+1. So a = 0 and b = π/3.
+2. Get the firt part of the sum tan(0) + tan(π/3). 
+   For C use tan which is part of the maths library.
+3. Create a loop that generates 11 equidistant points between 0 →π/3. 
+   Thus N = 12 and x0 = a = 0 and x12 = b = π/3.
+4. Change the loop so that you are adding 2 tan(xi) for the each of the 11 points.
+5. Add that sum to that of the end points and multiply by b−a/2N .
+6. Compare this against log(2) you should not be too far out.
+
+
+	For this exercise we will be computing the area under the curve f(x) with integral a to b, using Trapezoidal rule.
+>> We need to find the integral of f(x) = tan(x) from 0 → π/3
+>> π/3 represents 60degree.
+>> First we need to convert the function from degree to radians to calculate f(x)
+>> We can see in the formula that first and last term represents f(a) and f(b). Hence we will add these two functions first.
+>> N = 12, b = 60 degree -> 60/12 = 5. Hence there will be 12 parts of 5 degree each.
+>> Therefore we can use for loop for calculating middle term of the formula, by initialising i to 5, and increment it with 5 every cycle. Since b=60 the condition will be i<60.
+>> Now we need to multiply the whole by b−a/2N. But before multiplying we need to make sure b is in radians and not degree.
+>> At last we compare our results with log(2.0). Our result should be approximately equal to what we obtained.

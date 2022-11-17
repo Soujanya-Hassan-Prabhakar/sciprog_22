@@ -1,0 +1,56 @@
+commit a01f957f858a4aaaf023a0c7145cfab3c30dcac5
+Author: Soujanya H P <soujanya@soujanyas-mbp.home>
+Date:   Thu Nov 17 14:34:06 2022 +0000
+
+    Updated README
+
+commit 471b02c4799929fe98209ba403218a9b5ae05f83
+Author: Soujanya H P <soujanya@soujanyas-mbp.home>
+Date:   Mon Nov 14 11:09:48 2022 +0000
+
+    Upadated README file and added gitlog
+
+commit 36d0216561931e8f1bed197226d559d471e71417
+Author: Soujanya H P <soujanya@soujanyas-mbp.home>
+Date:   Sun Nov 13 23:59:22 2022 +0000
+
+    README file for practical_02
+
+commit 16b0e10e7506bd5a6078e26ce793b1551811eb66
+Author: Soujanya H P <soujanya@soujanyas-mbp.home>
+Date:   Sun Nov 13 23:43:50 2022 +0000
+
+    Codes for practical_02
+
+commit dc2584c935ed4720ef7c8786482c4ddd63f88504
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Sat Sep 24 00:14:00 2022 +0100
+
+    Update README.md
+
+commit e811d2284ca3ffb2924bab959a842bb3806b35e0
+Merge: 6a5ffb7 d2c301d
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Sat Sep 24 00:13:37 2022 +0100
+
+    Merge pull request #1 from buketbenek/Buket_BenekGursoy
+    
+    Update README file
+
+commit d2c301dad05f0c7ff203d4b28e1d8be3ade3c99c
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Sat Sep 24 00:11:21 2022 +0100
+
+    Update README file
+
+commit 6a5ffb76f12846d1b0c8cc5d62cf0716a4fda823
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Mon Aug 8 15:18:16 2022 +0100
+
+    Update README.md
+
+commit db2e6a8406e8f069576574b3bcdbe338a5827664
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Mon Aug 8 15:17:45 2022 +0100
+
+    Initial commit
