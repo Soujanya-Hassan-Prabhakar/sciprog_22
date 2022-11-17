@@ -1,47 +1,40 @@
 // Question 1
 
-For this exercise you need to have Conversion.c or Conversion. f 90. 
-
+For this exercise you need to have Conversion.c 
 1. Compile and the program.
-	The program is compiled successfully.
-
 2. Notice that as we explained in the lectures the floating point and integer presentations do
 not give the correct result.
-	This is because of the rounding in the floating point arithematics.
-
-
 3. How many binary digits are there in the number and how many can a float/real represent.
-	There are 25 binary digits in the number.
-	The single precision can represent 7 decimal point.
-	the double precision can represent 15 decimal point.
-
 4. Let’s say we want to check the number of binary digits. Construct an expression in the code
 that will do this.
-	The code is attached in the git branch.
-
 5. For C use the function log f , which is part of the maths library.
-	numdigits = ceil(logf(fnum)/log(2))
 
 
-Output : The number of digits is 25
-	 inum=33554431,  
-	 fnum=33554432.000000, 
-	 inum in binary=1111111111111111111111111
+	For this question we will be writing a code for converting integer to float and binary.
+>> First we will be converting the integer to float by using (float) function present in C.
+>> For converting the number to binary we divide the number by log(2). Since binary number is represented only with zeros and ones. [ eg: ceil(logf(number)/log(2)) ]
+>> We observe in conversion of int to float there is a different result. This is because of the rounding in the floating point arithmetic.
+
+>> For representing binary number (base 2) we need numerals 0 & 1
+>> Integers are represented by four bytes, which means that 28×4 = 232 numbers can be represented.
+>> An integer variable can store a value in the range −2147483648 to 2147483647
+>> In Floating point there are two typical types of real number single precision, which is
+held in 4-bytes, and double precision, held in 8-bytes
+>> The single precision can have maximum decimal digit of 7 decimal point.
+>> The double precision can have maximum decimal digit of 15 decimal point.
 
 
 
 //Question 2
 
-For this exercise use Sum.c or Sum. f 90.
-1. Complete the code to make the sum:
-	The program is compiled successfully.
+For this exercise use Sum.c
+1. Complete the code to make the sum: 1+1/2+1/3+1/4+.......+1/1000
 2. Print out the difference between the two sums.
-	The difference is 0.000007
 3. Is there a difference between sum1 and sum2 and are the two sums mathematically the same
 or not?
-	There is a difference between sum1 and sum2 due to rounding in the floating point arithematics. But the two sums are mathematically the same.
 
-
-Output: Sum1=7.485478
- 	Sum2=7.485472
- 	Difference between the two is 0.000007
+	For this question we will be writing a code for the sum function mentioned above.
+>> First we will add numbers from ascending to descending i.e, 1/smallest_denominator [eg: 1/1+1/2+...1/1000]
+>> Now we do the same addition of numbers from descending to ascending i.e, 1/largest_denominator [eg: 1/1000+1/999+...1/1]
+>> When you compare the two results there is difference of 0.000007
+>>There is a difference between sum1 and sum2 due to rounding in the floating point arithmetic. But the two sums are mathematically the same.
