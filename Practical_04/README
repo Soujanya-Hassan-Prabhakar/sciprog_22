@@ -1,0 +1,25 @@
+Practice 04
+
+• Calculate the values of tan(x) where x is in radians in the range [0, 60] every five degrees. Place
+the results in an array. Print the array. Make the array a global variable.
+1. Use the function (or subroutine) from the third lecture in Week 4, to convert degrees to
+radians.
+2. Construct main, in main have a loop where the loop counter does 0, 1, 2 · · · 12.
+3. Use the loop counter to generate the degree angles.
+4. Use the function to generate the radian values.
+5. Compute tan(x), store in the array.
+• Create a function/subroutine that calculates the area under the curve of tan(x) from 0 → 60
+degrees using the Trapezoidal Rule. (You did this last week).
+• There should be one argument, the number of points, and the return value is the area.
+• When compiling with C use #include < math.h > and compile with “-lm”. This will ensure the
+tan function is available.
+
+
+	For this exercise we will be creating a function that calculates the area under the curve of tan(x) from 0 → 60 degrees using the Trapezoidal Rule
+
+>> Here we are creating two functions, one to convert the value from degree to radians and one for computing using Trapezoidal rule.
+>> The degree to radian function returns the values from degree to radian.
+>> The trapezoidal rule function has four arguments, one for first term(a), last term (b), number of grids(N) and static array which contains the tan values in radians. From the given data we will compute the formula as we did in previous practical.
+>> In main function we are using array to store the values of tan(x). Here we are generating a counter from 0 to N, and convert each values to tan(x) and storing the result in array.
+>> note: since tan takes only values in radian we are using our degree to radian function first to convert the values.
+>>Finally we are calling our trapezoidal rule function to get the output and comparing it with the actual logf(2) to verify the results.
