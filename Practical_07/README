@@ -13,6 +13,7 @@ For example, e approximately equals to 2.71828 while f (1) = 2, f (2) = 2.5, f (
 >> We will dynamically allocate an array for the term whose memory is determined by the array size and the variable type.
 >> Then we find e term for the order and sum the exponentials as per the formula.
 >> One we are done with computing our value, we need to explicitly free the memory which is not needed.
+>> As the order of polynomial increases we observe decrease in the value of f(x) but for values greater than 13, we see a increase in the value of f(x). This is because the value of f(x) have byte size greater than that of double.
 
 
 
