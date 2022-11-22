@@ -1,0 +1,16 @@
+Practical 09
+
+• Magic-Square problem. A square is a defined as a square matrix with integer elements.
+1. Implement function isMagicSquare in file magic square.h to check whether a square is magic. The function takes the matrix and checks whether every row, column and main diagonals sum to the same value M.
+2. Also implement the main function in file main.c to receive the matrix.
+3. Read the matrix in from a file. Note that you will need to read in the size n of the matrix first, before reading in the elements. You can arrange the input how you want in the file, as long as it is read in correctly.
+4. Check to see if it is magic.
+5. Analyse the time complexity of the algorithm developed in function isMagicSquare and express it in Big-Theta notation as a function of the square side n. You may need to run the same calculations many times to get a significant time.
+
+
+This exercise illustrates the Magic-Square problem. For this exercise we are going to implement the function isMagicSquare in a file magic_square.h to check whether a square is magic and then include this file in our header in our main function and use the file to compute the results that a given matrix is magic square or not.
+>> First we need to get the number of lines from our input file. We open the file and increment to count for every new line character.
+>> Then we open our magic_square.h file to perform isMagicSquare operation.
+>> For this we dynamically allocate the memory of the size n of the matrix and then read the matrix in from a file.
+>> Then we call our function to check if the matix is a MagicSquare
+>> Once we are done with our computations we deallocate the memory space and close the file.
