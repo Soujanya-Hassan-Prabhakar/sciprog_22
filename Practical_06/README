@@ -1,0 +1,28 @@
+Practical 06
+
+• Write a program to multiply two matrices, Cn×q = An×pBp×q. See Fig. 1 for an illustration of the
+problem.
+1. Define n = 5, p = 3, and q = 4.
+2. Declare three arrays A, B, and C of type double or real.
+3. Initialise the C to zero and
+(a) Ai j = i + j,
+(b) and Bi j = i − j.
+4. Use the schematic below to determine the elements of C.
+5. Print out the three arrays (with one row of the matrix per line) to the screen and ensure that
+you are generating the correct result.
+6. If you have time create two files a main and matmult function. Have matmult return C to
+main.
+7. Construct a Makefile that will compile the two files to generate the executable.
+
+
+	This exercise illustrates the multiplication of two matrices of length (n x p) &(p x q), the resulting matrix will be of length (n x q).
+>> To create matrices, we require two dimensional arrays of given lengths.
+>> We can compute the values of matrices using for loops as shown where i represents the row numbers and j represents column numbers.
+>> We then initialise of matrix C to zero before performing matrix multiplication.
+>> Since there are three different variables n,p,q we use 3 different matrix indices i,j,k respectively.
+
+>> We can use make file to execute the same program.
+>> we will create a matrix_mul.c file to define the matrix multiplication in a function and a main.c function in which the matrix multiplication function is called.
+>> We create object file for both of these .c file
+>> When we have multiple files then we can write command in Makefile to create Object files for each source file. If you do this – only those files will be compiled which are modified.
+>> The same is shown in the example here.
