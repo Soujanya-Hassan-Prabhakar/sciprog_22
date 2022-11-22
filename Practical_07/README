@@ -1,0 +1,30 @@
+Practical 07
+
+• Use the formula below to estimate the value of e by setting x = 1. The user inputs the order of the polynomial needed, dynamically allocate an array of type double which stores the term for each power of x separately. Compare the estimate against the true value. 
+Evaluate the estimates from 1st order to 15th order polynomials. Something strange happens with the higher order polynomials the estimate gets worse, why is that?
+
+f(x) = 1 + x + x^2/2! + x^3/3! + x^4/4! + · · ·
+
+For example, e approximately equals to 2.71828 while f (1) = 2, f (2) = 2.5, f (3) = 2.6666 and so on.
+
+	This exercise illustrates the Taylor Series for a function f(x) where estimate the value of e by setting x = 1.
+>> First lets find the factorial for each value of x as x as in the formula.
+>> We can define the factorial function and then use it in our main.
+>> We will dynamically allocate an array for the term whose memory is determined by the array size and the variable type.
+>> Then we find e term for the order and sum the exponentials as per the formula.
+>> One we are done with computing our value, we need to explicitly free the memory which is not needed.
+
+
+
+
+• Basic C Pointers and dynamic memory allocation:
+1. Write a function allocatearray() that takes an integer as an argument and returns a pointer to an allocated memory block of that many integers.
+2. Write a function fillwithones() that takes a pointer to an array of integers and fills every cell of the array with a one. What other argument do you need to pass to this function?
+3. Write a function printarray() that takes a pointer to an array of integers and prints its elements on screen.
+4. Write a function to free the allocated memory.
+5. Call all these functions into a main block. Run with different array sizes.
+
+	For this exercise we will write function to allocate the memory dynamically, and fill the array with one and print them respectively.
+>> First we create allocatearray() function to dynamically allocate memory. For this we use malloc() operation that takes integer as an argument and returns a pointer to a block of memory that is reserved.
+>> We fill the value for this allocated memory will ones and then print those values.
+>> Ones we are done with our operation we need to free the memory that was allocated.
