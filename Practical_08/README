@@ -1,0 +1,26 @@
+Practical 08
+
+
+• Write a function that returns the Greatest Common Divisor (GCD) of a pair of integers passed as arguments. The GCD of two or more non-zero integers, is the largest positive integer that divides the numbers without a remainder. For example, the GCD of 8 and 12 is 4. 
+A convenient way to find the GCD of two integers is to use the euclidian algorithm:
+	GCD(a, b)
+	while b 6 = 0 do
+	temp=b
+	b=a mod b
+	a=temp
+	end while
+	return a
+
+gcd(a, b) = a -> if b = 0
+gcd(a, b) = gcd(b, a mod b) -> if b != 0
+
+1. Use the pseudo code to construct an iterative function.
+2. Construct a recursive function to do the same, using the formula below the pseudo code.
+
+	In this exercise we will find the gcd of two numbers using iterative function and recursive function.
+>> When we are taking an input, it is good practice to check if the inputs we entered correctly or not.
+>> To find gcd through iterative function, we use the euclidian algorithm as defined above.
+>> To find gcd through recursive function, we perform gcd(a, b) = gcd(b, a mod b) until b=0. 
+If b=0, gcd(a, b) = a. It is called recursive because we use the same function to return values.
+
+Note: We can also use a random number generator to input the value of a and b instead of manually entering the value.
