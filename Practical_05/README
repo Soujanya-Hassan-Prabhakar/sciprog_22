@@ -1,0 +1,47 @@
+Practical 05
+
+
+< Fibonacci Series >
+
+• Create a program that displays the Fibonacci series upto n.
+• The formulae for the Fibonacci series are:
+Fn = Fn−1 + Fn−2 (1)
+F0 = 0 F1 = 1 (2)
+1. Get the user to enter the value of n.
+2. Have a function that that has two arguments. On input the arguments have Fn−1 and Fn−2.
+On exit they have Fn and Fn−1.
+3. Use a loop to find the whole series upto n.
+4. Print out the series.
+
+	In this exercise we will be creating a function that displays Fibonacci sequence in which each number is the sum of the two preceding ones.
+>> We first print the first two terms of Fibonacci series i.e 0 & 1.
+>> To print 3rd to nth term we define the function fibonacci using pointers as arguments 
+   (Fn = Fn−1 + Fn−2)
+>> Now we store Fn−1 as Fn and Fn−2 as Fn−1 and so on.
+
+
+
+
+
+
+< Inverse Hyperbolic Tangent function >
+
+1. Get the user in enter a real positive number delta.
+2. Implement a function artanh1(x) as an approximation to this Maclaurin series. As the series
+is infinite, we will set the function to stop when the element in the series is smaller than a
+given precision, delta.
+3. Implement function artanh2(x) using approximations to natural logarithms. Remember that
+natural logarithms are already implemented in the language’s standard math libraries.
+4. Write a main that will calculate arctanh(x) where x ∈ [−0.9, 0.9] and sampled every 0.01,
+using both methods. Store the results for both methods in separate arrays.
+5. Compare the accuracy of each method with each other (to 10 significant figures).
+
+	For this exercise we will be creating two functions, one to calculate the hyperbolic arc tangent using Maclaurin series and the other using natural logarithm.
+>> First we enter the delta value to calculate artanh(x) using Maclaurin series where x ∈ [−0.9, 0.9]
+>> As given above, x moves from -0.9 to 0.9, for each step increase of x 
+>> We calculate artanh1(x) using values of x and delta as given in the formula for Maclaurin series
+>> Then we calculate artanh2(x) using formula for natural logarithm.
+>> We print the difference between artanh1(x) - artanh2(x)
+>> We observe the values follows a hyperbolic arc, ie, the value decreases till it reaches 0 and then we can see the increases again, for which x moves from -0.9 to 0.9.
+ 
+
